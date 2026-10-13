@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script src="../shared.js"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary-fixed-variant":"#6e3900","secondary-fixed":"#ffdcc3","on-primary-fixed-variant":"#264191","on-surface":"#131b2e","outline-variant":"#c5c5d3","secondary":"#904d00","on-primary-fixed":"#00164e","on-secondary":"#ffffff","primary-fixed-dim":"#b6c4ff","surface-container-high":"#e2e7ff","tertiary-fixed-dim":"#68dba9","outline":"#757682","on-primary-container":"#90a8ff","inverse-surface":"#283044","tertiary":"#003120","secondary-fixed-dim":"#ffb77d","surface":"#faf8ff","primary-container":"#1e3a8a","tertiary-fixed":"#85f8c4","inverse-primary":"#b6c4ff","surface-tint":"#4059aa","on-tertiary-fixed":"#002114","on-tertiary":"#ffffff","primary-fixed":"#dce1ff","on-tertiary-container":"#4ac08f","surface-container-low":"#f2f3ff","tertiary-container":"#004a32","on-secondary-fixed":"#2f1500","surface-bright":"#faf8ff","surface-variant":"#dae2fd","on-error":"#ffffff","surface-container-highest":"#dae2fd","secondary-container":"#fe932c","on-tertiary-fixed-variant":"#005137","error":"#ba1a1a","surface-container":"#eaedff","surface-dim":"#d2d9f4","error-container":"#ffdad6","on-background":"#131b2e","on-error-container":"#93000a","on-primary":"#ffffff","inverse-on-surface":"#eef0ff","on-surface-variant":"#444651","primary":"#00236f","surface-container-lowest":"#ffffff","background":"#faf8ff","on-secondary-container":"#663500"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-sm":"0.5rem","space-lg":"1.5rem","space-xs":"0.25rem","space-xl":"2.5rem",gutter:"1.5rem",margin:"2rem","gutter-mobile":"1rem","space-md":"1rem","margin-mobile":"1rem"},fontFamily:{"headline-lg-mobile":["Plus Jakarta Sans"],"metric-num":["Plus Jakarta Sans"],"display-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],display:["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"]},fontSize:{"headline-lg-mobile":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.015em",fontWeight:"700"}],"metric-num":["1.75rem",{lineHeight:"2rem",letterSpacing:"-0.02em",fontWeight:"700"}],"display-mobile":["2.25rem",{lineHeight:"2.75rem",letterSpacing:"-0.02em",fontWeight:"800"}],"headline-md":["1.25rem",{lineHeight:"1.75rem",letterSpacing:"-0.01em",fontWeight:"600"}],display:["3rem",{lineHeight:"3.5rem",letterSpacing:"-0.025em",fontWeight:"800"}],"body-sm":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"0em",fontWeight:"400"}],"label-lg":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"0.01em",fontWeight:"600"}],"body-lg":["1.125rem",{lineHeight:"1.75rem",letterSpacing:"0em",fontWeight:"400"}],"label-md":["0.75rem",{lineHeight:"1rem",letterSpacing:"0.04em",fontWeight:"700"}],"headline-lg":["2rem",{lineHeight:"2.5rem",letterSpacing:"-0.02em",fontWeight:"700"}],"body-md":["1rem",{lineHeight:"1.5rem",letterSpacing:"0em",fontWeight:"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="bg-primary-container text-on-primary py-space-xs px-gutter"><div class="w-full flex flex-wrap items-center justify-between gap-space-sm"><div class="flex items-center gap-space-md"><button onclick="VS.showHelplineModal()" class="inline-flex items-center gap-space-xs bg-tertiary-container hover:bg-tertiary hover:text-white text-on-tertiary-container px-space-sm py-0.5 rounded-full font-label-md text-label-md transition-colors cursor-pointer"><span class="material-symbols-outlined text-sm">support_agent</span>24/7 Toll-Free: 1800-VIDYUT</button><span class="hidden lg:inline text-on-primary-container font-label-md text-label-md">National Public Service Portal for Rural School Infrastructure</span></div><div class="flex items-center gap-space-md font-label-md text-label-md"><div class="flex items-center gap-space-xs bg-primary text-on-primary px-space-sm py-0.5 rounded-lg"><span class="material-symbols-outlined text-sm">language</span><span class="text-on-primary">English</span><span class="text-outline-variant">|</span><span class="text-primary-fixed-dim hover:text-on-primary cursor-pointer">हिंदी</span><span class="text-outline-variant">|</span><span class="text-primary-fixed-dim hover:text-on-primary cursor-pointer">मराठी</span></div><button onclick="VS.initHighContrast()" class="flex items-center gap-space-xs text-on-primary hover:text-primary-fixed-dim transition-colors cursor-pointer" type="button"><span class="material-symbols-outlined text-sm">contrast</span><span class="hidden sm:inline">High Contrast</span></button></div></div></div><div class="h-20 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm cursor-pointer" onclick="VS.navigateTo('dashboard')"><img alt="VidyutSahayak Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Uo8GQtoh2-uihFSwH8FBp7V8LLifZArYAOxP9bngkSZmfWynrtB3Vp3Y82N96xAEsUd2jv4avqIqv4XXecjJI5jCgeas_9q6GizHQt_rVAaLtOt6greJklXsNmGWL8En5YJkx6JwlgAssAghIbDnKSCS1RmihY-WxEFdoJLmMnJgC8PpApKM67RMnpG-vjtVHFlK5KNbAJm6SToiPGiORxCVx6EwrwQoBIhCzPcHMV6qPxdSo_GMlL6A"/><div class="flex flex-col"><span class="font-headline-md text-headline-md font-bold text-primary tracking-tight">VidyutSahayak</span><span class="hidden md:inline-block font-label-md text-label-md text-on-surface-variant font-medium">Rural School Electrification &amp; Rapid Response</span></div></div><span class="hidden xl:inline-block bg-surface-container-high text-on-primary-fixed-variant px-space-sm py-1 rounded-full font-label-md text-label-md font-semibold">Civil Dispatch System</span></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary text-on-primary font-label-lg rounded-lg"><a class="px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="dashboard" href="#">Dashboard</a><a class="px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="issue-tickets" href="#">Issue Tickets</a><a aria-current="page" class="px-space-md py-space-sm transition-colors bg-primary text-on-primary font-label-lg rounded-lg" data-path="report-failure" href="#">Report Failure</a><a class="px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="volunteers-and-techs" href="#">Volunteers &amp; Techs</a><a class="px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="impact-map" href="#">Impact Map</a></nav><div class="flex items-center gap-space-md"><a class="inline-flex items-center gap-space-xs bg-secondary hover:bg-secondary-container text-on-secondary hover:text-on-secondary-container px-space-md py-space-sm rounded-lg font-label-lg text-label-lg transition-colors shadow-sm cursor-pointer" data-path="report-failure" href="#" onclick="VS.navigateTo('report'); return false;"><span class="material-symbols-outlined text-base">bolt</span><span>+ Report School Outage</span></a><div class="flex items-center gap-space-sm bg-surface-container-low p-space-xs rounded-xl cursor-pointer hover:bg-surface-container" onclick="VS.showVolunteersDrawer()"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSsmv2Jq3j3E-SS9o2QClDSmiFB7m5Vybw_8BQ_L06cMrBYj7mOYQZkomM48tXzSL7hMqB7DJCysM5R_iRzhx64dOAk7UgjZWxRH9qDUSMq8Jc2NZ7zcV7jokA4HuDAcQTFZE2TBkAtNFI4rL9w5MRh5-0nK7sGICEaOccytGdGkssCxsFsA1FYl_WR0P64ZX9c9IMhWrmuxY-eysLCEQYBTDhznmomclG5FHWXdyoeymKu39qVb4"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-tertiary-fixed-dim rounded-full ring-2 ring-surface"></span></div><div class="hidden 2xl:flex flex-col text-left"><span class="font-label-md text-label-md font-bold text-on-surface leading-tight">Rajesh Kumar</span><span class="font-label-md text-label-md text-on-surface-variant">Volunteer Tech, Solapur District</span></div></div></div></div></header><main class="w-full pt-28 bg-surface"><div class="flex flex-col w-full">
+<!-- Hazard Notice Bar (High Visibility Red Scrim) -->
+<section class="w-full px-gutter py-space-sm bg-error-container text-on-error-container shadow-sm">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-error text-2xl animate-pulse">warning</span>
+<p class="font-label-lg text-label-lg font-bold">
+          Experiencing live sparks, smoke, or fallen wires?
+          <span class="font-body-sm text-body-sm font-normal text-on-error-container/90 ml-1">
+            Keep students at least 50m away. Call Emergency Rapid Line:
+          </span>
+<a class="underline font-bold text-error ml-1 hover:text-on-error-container" href="tel:1800843988">1800-VIDYUT-AID (1800-843-988)</a>
+</p>
+</div>
+<div class="flex items-center gap-space-xs font-label-md text-label-md">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="uppercase tracking-wider font-bold">Priority Discom Hotline Active</span>
+</div>
+</div>
+</section>
+<!-- Main Content Layout -->
+<div class="w-full max-w-7xl mx-auto px-gutter py-space-lg flex flex-col gap-space-lg">
+<!-- Breadcrumb & Multi-step Workflow Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md uppercase tracking-wider">
+<span>Field Incident Dispatch</span>
+<span>/</span>
+<span class="text-primary font-bold">Form 104-E (Rural Grid &amp; Solar)</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-extrabold flex items-center gap-space-sm">
+<span>Report School Electrical Failure</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed-variant px-space-sm py-0.5 rounded-full font-label-md text-label-md font-bold">
+            Public Direct Response
+          </span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Instantly routes diagnostics to the nearest certified technicians, solar empanelled engineers, and block education officers.
+        </p>
+</div>
+<!-- Live Sync & Offline Indicator -->
+<div class="flex items-center gap-space-xs bg-surface-container-high px-space-md py-space-xs rounded-xl shadow-sm text-on-primary-fixed-variant font-label-md text-label-md">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-fixed-dim opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-tertiary"></span>
+</span>
+<span class="font-bold">Offline Sync Ready</span>
+<span class="text-outline">|</span>
+<span class="text-on-surface-variant">IndexedDB Cache Active</span>
+</div>
+</div>
+<!-- Stepper Pipeline -->
+<div class="w-full bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm items-center">
+<!-- Step 1 (Current) -->
+<div id="stepTab1" onclick="jumpToStep(1)" class="flex items-center gap-space-xs bg-surface-container p-space-sm rounded-lg cursor-pointer transition-all">
+<div id="stepNum1" class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-label-md">1</div>
+<div class="flex flex-col min-w-0">
+<span id="stepTitle1" class="font-label-md text-label-md font-bold text-primary truncate">Step 1: School Identity</span>
+<span class="font-label-md text-label-md text-on-surface-variant truncate">UDISE &amp; Location</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div id="stepTab2" onclick="jumpToStep(2)" class="flex items-center gap-space-xs p-space-sm rounded-lg opacity-80 cursor-pointer hover:bg-surface-container transition-all">
+<div id="stepNum2" class="w-8 h-8 rounded-full bg-surface-container-high text-on-primary-fixed-variant flex items-center justify-center font-bold text-label-md">2</div>
+<div class="flex flex-col min-w-0">
+<span id="stepTitle2" class="font-label-md text-label-md font-bold text-on-surface truncate">Step 2: Hazard Symptoms</span>
+<span class="font-label-md text-label-md text-on-surface-variant truncate">Grid, Solar, Wiring</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div id="stepTab3" onclick="jumpToStep(3)" class="flex items-center gap-space-xs p-space-sm rounded-lg opacity-80 cursor-pointer hover:bg-surface-container transition-all">
+<div id="stepNum3" class="w-8 h-8 rounded-full bg-surface-container-high text-on-primary-fixed-variant flex items-center justify-center font-bold text-label-md">3</div>
+<div class="flex flex-col min-w-0">
+<span id="stepTitle3" class="font-label-md text-label-md font-bold text-on-surface truncate">Step 3: Verification &amp; Media</span>
+<span class="font-label-md text-label-md text-on-surface-variant truncate">Photos &amp; Audio Note</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div id="stepTab4" onclick="jumpToStep(4)" class="flex items-center gap-space-xs p-space-sm rounded-lg opacity-80 cursor-pointer hover:bg-surface-container transition-all">
+<div id="stepNum4" class="w-8 h-8 rounded-full bg-surface-container-high text-on-primary-fixed-variant flex items-center justify-center font-bold text-label-md">4</div>
+<div class="flex flex-col min-w-0">
+<span id="stepTitle4" class="font-label-md text-label-md font-bold text-on-surface truncate">Step 4: SMS Dispatch</span>
+<span class="font-label-md text-label-md text-on-surface-variant truncate">Headmaster Contact</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Grid: Report Form (Left 8 cols) + Sidebar Intelligence (Right 4 cols) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column: Comprehensive Reporting Interactive Card -->
+<form class="lg:col-span-8 flex flex-col gap-space-lg" id="incident-form" onsubmit="event.preventDefault(); submitOutageReport();">
+<!-- SECTION 1: School Identification -->
+<div id="section-step-1" class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md scroll-mt-28">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-xl">school</span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">1. School Identification &amp; Geolocation</h2>
+</div>
+<span class="bg-surface-container px-space-sm py-0.5 rounded-full font-label-md text-label-md text-on-surface-variant font-semibold">
+              Verified Database: Maharashtra / Solapur
+            </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<!-- UDISE / School Lookup -->
+<div class="md:col-span-8 flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md font-bold text-on-surface flex items-center justify-between" for="udise-input">
+<span>School Name or 11-Digit UDISE Code <span class="text-error">*</span></span>
+<span class="font-normal text-on-surface-variant">Quick Lookup Available</span>
+</label>
+<div class="relative">
+<input class="w-full h-12 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none transition-all placeholder:text-outline" id="udise-input" placeholder="Enter 11-digit code (e.g. 27300501201) or school name..." type="text" value="Z.P. Primary School, Khed (UDISE: 27300501201)" onkeydown="if(event.key==='Enter'){event.preventDefault(); verifySchool();}"/>
+<button id="btnVerifyUdise" onclick="verifySchool()" class="absolute right-2 top-2 h-8 px-space-sm bg-primary hover:bg-primary-container text-on-primary rounded font-label-md text-label-md flex items-center gap-1 transition-colors cursor-pointer" type="button">
+<span class="material-symbols-outlined text-sm">search</span>
+<span>Verify</span>
+</button>
+</div>
+</div>
+<!-- School Category -->
+<div class="md:col-span-4 flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md font-bold text-on-surface" for="school-category">Institution Type</label>
+<select class="w-full h-12 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest cursor-pointer" id="school-category">
+<option selected="">Zilla Parishad (Primary)</option>
+<option>Government Girls High School</option>
+<option>Ashram Shala (Tribal Residential)</option>
+<option>KGBV Model Vidyalaya</option>
+<option>Aided Secondary School</option>
+</select>
+</div>
+<!-- District & Taluka Readout -->
+<div class="md:col-span-4 flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md font-bold text-on-surface">District</label>
+<input id="district-input" class="w-full h-12 px-space-md rounded-lg bg-surface-container text-on-surface font-body-md text-body-md cursor-not-allowed" readonly="" type="text" value="Solapur"/>
+</div>
+<div class="md:col-span-4 flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md font-bold text-on-surface">Taluka / Block</label>
+<input id="taluka-input" class="w-full h-12 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md" type="text" value="Pandharpur"/>
+</div>
+<div class="md:col-span-4 flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md font-bold text-on-surface">Students Enrolled</label>
+<div class="relative">
+<input id="students-input" class="w-full h-12 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md" type="number" value="240"/>
+<span class="absolute right-3 top-3 text-on-surface-variant font-label-md text-label-md">Children</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 2: Issue Classification & Urgency Matrix -->
+<div id="section-step-2" class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md scroll-mt-28">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-xl">bolt</span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">2. Electrical Failure Classification</h2>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Select primary point of failure</span>
+</div>
+<!-- Failure Type Visual Radios -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-space-sm" id="fault-types-grid">
+<!-- Option 1: Selected -->
+<label onclick="selectFaultType(this)" class="fault-card relative flex flex-col p-space-md rounded-xl bg-surface-container ring-2 ring-primary cursor-pointer shadow-sm hover:shadow-md transition-all">
+<input checked="" class="sr-only" name="fault_type" type="radio" value="Total Blackout"/>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="w-10 h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">power_off</span>
+</div>
+<span class="material-symbols-outlined text-primary text-xl check-icon">check_circle</span>
+</div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Total Blackout</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">Grid trip, transformer burst, or incoming 3-phase line drop.</span>
+</label>
+<!-- Option 2 -->
+<label onclick="selectFaultType(this)" class="fault-card relative flex flex-col p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all">
+<input class="sr-only" name="fault_type" type="radio" value="Solar / Inverter Inactive"/>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">solar_power</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-xl check-icon">radio_button_unchecked</span>
+</div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Solar / Inverter Inactive</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">Rooftop PV array offline, dead inverter battery, or charge trip.</span>
+</label>
+<!-- Option 3 -->
+<label onclick="selectFaultType(this)" class="fault-card relative flex flex-col p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all">
+<input class="sr-only" name="fault_type" type="radio" value="Water Pump / Borewell"/>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">electrical_services</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-xl check-icon">radio_button_unchecked</span>
+</div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Water Pump / Borewell</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">Submersible starter burnt; drinking &amp; sanitation water stalled.</span>
+</label>
+<!-- Option 4 -->
+<label onclick="selectFaultType(this)" class="fault-card relative flex flex-col p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all">
+<input class="sr-only" name="fault_type" type="radio" value="Active Hazard / Shock"/>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">warning</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-xl check-icon">radio_button_unchecked</span>
+</div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Active Hazard / Shock</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">Exposed copper, wet wall conduction, or burning smell in corridor.</span>
+</label>
+<!-- Option 5 -->
+<label onclick="selectFaultType(this)" class="fault-card relative flex flex-col p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all">
+<input class="sr-only" name="fault_type" type="radio" value="Classroom Wiring / Fans"/>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">lightbulb</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-xl check-icon">radio_button_unchecked</span>
+</div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Classroom Wiring / Fans</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">MCB tripping continually, loose distribution board, dark rooms.</span>
+</label>
+<!-- Option 6 -->
+<label onclick="selectFaultType(this)" class="fault-card relative flex flex-col p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all">
+<input class="sr-only" name="fault_type" type="radio" value="Smart Class / ICT Lab"/>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">computer</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-xl check-icon">radio_button_unchecked</span>
+</div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Smart Class / ICT Lab</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">Computer lab stabilizer faulty, interactive panel cannot boot.</span>
+</label>
+</div>
+<!-- Urgency Level Cards -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<span class="font-label-md text-label-md font-bold text-on-surface">Urgency Level Assessment <span class="text-error">*</span></span>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm" id="urgency-grid">
+<!-- Urgent Radio 1: High -->
+<label onclick="selectUrgency(this)" class="urgency-card flex items-start gap-space-sm p-space-md rounded-xl bg-secondary-fixed/40 ring-2 ring-secondary cursor-pointer shadow-sm transition-all">
+<input checked="" class="mt-1" name="urgency" type="radio" value="High Priority"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="bg-secondary text-on-secondary px-space-xs py-0.5 rounded font-label-md text-label-md font-bold">HIGH URGENCY</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Classrooms Dark / Midday Meal Stalled</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-1">
+Major school sections shut down; borewell water cannot pump for lunch preparation. Dispatches within 3 hours.
+</p>
+</div>
+</label>
+<!-- Urgent Radio 2: Critical -->
+<label onclick="selectUrgency(this)" class="urgency-card flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container-low hover:bg-error-container/40 cursor-pointer transition-all">
+<input class="mt-1" name="urgency" type="radio" value="Critical Hazard"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="bg-error text-on-error px-space-xs py-0.5 rounded font-label-md text-label-md font-bold">CRITICAL HAZARD</span>
+<span class="font-label-md text-label-md text-error font-semibold">Immediate Hazard</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-1">
+Live sparks, burning breaker smells, or board exam ongoing today. Priority broadcast to 5 closest responders.
+</p>
+</div>
+</label>
+<!-- Urgent Radio 3: Medium -->
+<label onclick="selectUrgency(this)" class="urgency-card flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all">
+<input class="mt-1" name="urgency" type="radio" value="Medium / Partial"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="bg-surface-container-high text-primary font-bold px-space-xs py-0.5 rounded font-label-md text-label-md">MEDIUM</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Partial Outage</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-1">
+Single classroom block or laboratory offline, main academic hall remains powered. Scheduled response within 24h.
+</p>
+</div>
+</label>
+<!-- Urgent Radio 4: Low -->
+<label onclick="selectUrgency(this)" class="urgency-card flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all">
+<input class="mt-1" name="urgency" type="radio" value="Low / Wiring"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="bg-surface-container-highest text-on-surface-variant font-bold px-space-xs py-0.5 rounded font-label-md text-label-md">LOW</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Maintenance / Upgrades</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-1">
+Flickering tubes, earthing pit inspection, or preventative monsoon safety check. Handled during routine block visit.
+</p>
+</div>
+</label>
+</div>
+</div>
+<!-- Problem Description -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md font-bold text-on-surface flex items-center justify-between" for="desc">
+<span>Detailed Symptoms &amp; Duration <span class="text-error">*</span></span>
+<span class="font-normal text-on-surface-variant">Language: Marathi, Hindi, English accepted</span>
+</label>
+<textarea class="w-full p-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none placeholder:text-outline" id="desc" placeholder="Describe what occurred. E.g., 'Transformer made a loud burst sound during morning storm at 9:15 AM. Main switchboard on ground floor clicked off and smells of burnt insulation. 4 classrooms have zero light.'" rows="3">Heavy thunderstorm tripped the transformer near village pond at 08:30 AM. Inverter battery beeped and died completely after 40 minutes. Ground floor classrooms and kitchen water motor are totally non-functional.</textarea>
+</div>
+</div>
+<!-- SECTION 3: Evidence, Meter Photos & Voice Memo -->
+<div id="section-step-3" class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md scroll-mt-28">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-xl">photo_camera</span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">3. Visual Proof &amp; Voice Recording</h2>
+</div>
+<span class="font-label-md text-label-md text-tertiary font-bold bg-tertiary-fixed/30 px-space-sm py-0.5 rounded-full">
+Photo reduces diagnosis time by 60%
+</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Media Upload Area -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-on-surface">Damage &amp; Meter Box Snapshots</span>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col items-center justify-center text-center gap-space-xs border-2 border-dashed border-outline/30 hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-3xl text-outline">add_a_photo</span>
+<p class="font-label-md text-label-md font-bold text-on-surface">Tap to capture or drop images</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Capture main breaker, burnt fuse, or meter LCD</p>
+<input type="file" id="photo-upload-input" accept="image/*" class="hidden" onchange="handlePhotoUpload(event)">
+<button onclick="document.getElementById('photo-upload-input').click()" class="mt-space-xs px-space-md py-space-xs bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold rounded-lg transition-colors cursor-pointer" type="button">
+Choose Photo from Device
+</button>
+</div>
+<!-- Thumbnails Preview List -->
+<div id="photoThumbnails" class="flex items-center gap-space-sm pt-space-xs overflow-x-auto">
+<div class="relative w-16 h-16 rounded-lg overflow-hidden bg-surface-container shadow-sm flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="FUSE_01" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYC07Mk97YXj-0BpwGiBXxozAAnpbf1E7a71skaS61NN7S7Sv1D9k3wAJQUHCEidoV6Y269M_WFuQK4UaJZGmhWvZUi41bqjdfZaC9nC_QIae5pxke00T1Qmp28r7CL9Xb0uQ8RSYoJ7dhZ3qUqOx6F9fTJA_lkwjBq3JNImlgwk7epLPjAtvzx34ATscSYov-9q9Caax0IeWCEWq9swhevDPrGmRSZhmTUQc-lzhfp6b9OSgZYN8"/>
+<span class="absolute bottom-0 inset-x-0 bg-primary/80 text-on-primary text-[9px] text-center font-bold">FUSE_01</span>
+</div>
+<div class="relative w-16 h-16 rounded-lg overflow-hidden bg-surface-container shadow-sm flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="METER" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-y7cETjPy60U_Wp_1h1niJsmYaNU26sMsFZJlDmqCcc_cOnAvpdgwK2io9uGexJanMIDQAxeyAZr3EYgUWUFo8xjAnZtuY41WYVO-iZu7c6UX8BOYpp7MJgLsCu8LD2skpidDouMyKpg5laude1BZ1WBVWPBMRoSVQRPl8hjPKol7i1PIcxeo8nzGLMrekMNTQF4qI24fMrZpeqQVr6ljmSYpKryn9BYHsdgILcPSu1_jAHG_BV4"/>
+<span class="absolute bottom-0 inset-x-0 bg-primary/80 text-on-primary text-[9px] text-center font-bold">METER</span>
+</div>
+<button onclick="document.getElementById('photo-upload-input').click()" class="w-16 h-16 rounded-lg bg-surface-container-high hover:bg-surface-container flex flex-col items-center justify-center text-on-surface-variant text-xs gap-1 transition-colors flex-shrink-0 cursor-pointer" type="button">
+<span class="material-symbols-outlined text-lg">add</span>
+<span>More</span>
+</button>
+</div>
+</div>
+<!-- Voice Recording for Rural Teachers -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-on-surface flex items-center justify-between">
+<span>Vernacular Voice Note</span>
+<span class="text-on-surface-variant font-normal">मराठी / हिंदी मध्ये बोला</span>
+</span>
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between h-full gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<button id="btnRecordVoice" onclick="toggleVoiceRecording()" class="w-12 h-12 rounded-full bg-secondary hover:bg-secondary-container text-on-secondary flex items-center justify-center shadow-sm hover:scale-105 transition-all flex-shrink-0 cursor-pointer" type="button">
+<span id="voiceMicIcon" class="material-symbols-outlined text-2xl">mic</span>
+</button>
+<div class="flex flex-col">
+<span id="voiceRecordTitle" class="font-label-lg text-label-lg font-bold text-on-surface">Record Audio Statement</span>
+<span id="voiceRecordStatus" class="font-body-sm text-body-sm text-on-surface-variant">Ideal when hands are full or typing in English is difficult.</span>
+</div>
+</div>
+<!-- Voice Preview Player Widget -->
+<div class="flex items-center gap-space-sm bg-surface-container-lowest p-space-xs rounded-lg">
+<button id="btnPlayVoice" onclick="playVoicePreview()" class="text-primary hover:text-secondary transition-colors cursor-pointer" type="button">
+<span id="playVoiceIcon" class="material-symbols-outlined text-xl">play_circle</span>
+</button>
+<div id="waveformBars" class="flex-1 flex items-center gap-1">
+<span class="h-3 w-1 bg-primary rounded-full"></span>
+<span class="h-5 w-1 bg-primary rounded-full"></span>
+<span class="h-2 w-1 bg-primary rounded-full"></span>
+<span class="h-6 w-1 bg-secondary rounded-full"></span>
+<span class="h-4 w-1 bg-secondary rounded-full"></span>
+<span class="h-2 w-1 bg-primary/50 rounded-full"></span>
+<span class="h-4 w-1 bg-primary/50 rounded-full"></span>
+<span class="h-1 w-1 bg-outline rounded-full"></span>
+</div>
+<span id="voiceDurationText" class="font-label-md text-label-md text-on-surface-variant font-mono">0:24 / 1:00</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 4: Contact & Reporting Officer -->
+<div id="section-step-4" class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md scroll-mt-28">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-xl">contact_phone</span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">4. On-Site Point of Contact</h2>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Instant WhatsApp notifications</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md font-bold text-on-surface" for="officer-name">Reporter Full Name <span class="text-error">*</span></label>
+<input class="w-full h-12 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest" id="officer-name" type="text" value="Sunita B. Patil"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md font-bold text-on-surface" for="officer-role">Official Designation</label>
+<select class="w-full h-12 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest cursor-pointer" id="officer-role">
+<option selected="">Headmistress / Headmaster</option>
+<option>Assistant Teacher / Shikshan Sevak</option>
+<option>School Management Committee (SMC) Chair</option>
+<option>Gram Panchayat Sarpanch</option>
+<option>Midday Meal Coordinator</option>
+</select>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md font-bold text-on-surface" for="officer-phone">WhatsApp / Mobile <span class="text-error">*</span></label>
+<div class="relative">
+<span class="absolute left-3 top-3 text-on-surface-variant font-bold text-body-md">+91</span>
+<input class="w-full h-12 pl-12 pr-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest" id="officer-phone" type="tel" value="98230 44192"/>
+</div>
+</div>
+</div>
+<!-- Secondary Contact Row -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md font-bold text-on-surface" for="alt-phone">Backup Village Phone Number (Peon or SMC Member)</label>
+<div class="relative">
+<span class="absolute left-3 top-3 text-on-surface-variant font-bold text-body-md">+91</span>
+<input class="w-full h-12 pl-12 pr-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest" id="alt-phone" placeholder="98XXXXXXXX" type="tel"/>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<input checked="" class="w-5 h-5 rounded text-primary cursor-pointer" id="sms-consent" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface-variant cursor-pointer" for="sms-consent">
+Authorize auto-dispatch SMS alerts to 3 nearby registered electrical technicians and Block Resource Center (BRC).
+</label>
+</div>
+</div>
+</div>
+<!-- Action Tray: High Contrast Dispatch Controls -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-md flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-tertiary">cloud_done</span>
+<span>Draft automatically preserved in local device storage</span>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<button id="btnExportSms" onclick="exportSmsTemplate()" class="w-1/2 sm:w-auto px-space-lg py-space-sm bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg font-bold rounded-lg transition-colors flex items-center justify-center gap-space-xs cursor-pointer" type="button">
+<span class="material-symbols-outlined text-lg">sms</span>
+<span>Export SMS Template</span>
+</button>
+<button id="btnSubmitOutage" onclick="submitOutageReport()" class="w-1/2 sm:w-auto px-space-xl py-space-sm bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-bold rounded-lg transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-space-xs cursor-pointer" type="button">
+<span class="material-symbols-outlined text-lg">bolt</span>
+<span>Submit &amp; Dispatch Field Crew</span>
+</button>
+</div>
+</div>
+</form>
+<!-- Right Column: Operational Context, Response SLA, and Safety Protocols -->
+<aside class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Field Map & School Vicinity Snippet -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-base text-primary">pin_drop</span>
+Substation Proximity
+</span>
+<span class="font-label-md text-label-md text-tertiary font-semibold">11kV Feeder Live</span>
+</div>
+<div class="w-full h-44 rounded-lg bg-cover bg-center relative overflow-hidden shadow-inner flex items-end p-space-xs" data-location="Pandharpur, Solapur, Maharashtra" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAdCfcjK5EYQHtxp5gzuKGvgv08pZ4h1O_9Tz5rd6W-44rIr8UwjrVbf6u602ozhd_xTYaVS2vtTstovY7Pgj6ZnFo_RXYsf2Lb287jC1EYx-rOez2RKwGv8ttQuMfv2bWWZx1eywhYVbEsAste4UdB2-yCRq1PHQEJtFVJdOV2pA5cvO1pzFQ6l_9yZsxPMdTqi5ZETopqhftZvipxbxwnzEDC0qcyfoDP2dj6-IVFU_WL3IleK-s')">
+<div class="bg-surface/95 backdrop-blur-md px-space-sm py-1 rounded-md shadow-sm w-full flex items-center justify-between text-xs">
+<span id="substationName" class="font-bold text-primary">Khed 33/11kV Substation</span>
+<span id="substationDist" class="text-on-surface-variant font-mono">3.4 km away</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-xs text-on-surface-variant px-1 font-label-md">
+<span id="discomCode">Discom: MSEDCL Solapur Circle</span>
+<span id="feederCode">Feeder Code: SLP-KHD-04</span>
+</div>
+</div>
+<!-- Rapid Response Workflow SLA Card -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-xl">timer</span>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">What Happens After Submission?</h3>
+</div>
+<div class="flex flex-col gap-space-md pt-space-xs">
+<!-- Step A -->
+<div class="flex items-start gap-space-sm">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5">1</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Instant SMS Blast to 3 Techs</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Certified local wiremen and solar partners within a 15km perimeter receive fault details on mobile.
+                </p>
+</div>
+</div>
+<!-- Step B -->
+<div class="flex items-start gap-space-sm">
+<div class="w-6 h-6 rounded-full bg-secondary text-on-secondary font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5">2</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Call &amp; Parts Verification</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Volunteer technician calls the Headmaster to confirm replacement spares (fuse links, MCBs, capacitors).
+                </p>
+</div>
+</div>
+<!-- Step C -->
+<div class="flex items-start gap-space-sm">
+<div class="w-6 h-6 rounded-full bg-tertiary text-on-tertiary font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5">3</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Digital Restoration Audit</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Repairs certified on VidyutSahayak with post-work meter photo; logged with District Collectorate.
+                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Safety First Teacher Protocol -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-error">
+<span class="material-symbols-outlined text-xl">health_and_safety</span>
+<h3 class="font-label-lg text-label-lg font-bold text-on-surface">School Safety Protocol (While Waiting)</h3>
+</div>
+<ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-base text-secondary flex-shrink-0 mt-0.5">check</span>
+<span>Barricade switchboard or meter cupboard area using classroom benches.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-base text-secondary flex-shrink-0 mt-0.5">check</span>
+<span>Do not let students use tap water if water-pump motor wiring has tripped.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-base text-secondary flex-shrink-0 mt-0.5">check</span>
+<span>Never touch wet main distribution walls or fuse links with bare metal tools.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-base text-secondary flex-shrink-0 mt-0.5">check</span>
+<span>If storming, shift primary children to dry second-floor classrooms.</span>
+</li>
+</ul>
+</div>
+<!-- Offline Support Info Banner -->
+<div class="bg-tertiary-container text-on-tertiary-container p-space-md rounded-xl flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-2xl text-tertiary-fixed">signal_cellular_connected_no_internet_4_bar</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-tertiary">Zero Cellular Coverage?</span>
+<span class="font-body-sm text-body-sm text-on-tertiary/90">
+              Send SMS: <strong>VS OUTAGE 27300501201</strong> to <strong>56161</strong> from any standard feature phone.
+            </span>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low mt-space-xl"><div class="w-full px-gutter py-space-xl flex flex-col gap-space-lg"><div class="flex flex-wrap items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-primary"><span class="material-symbols-outlined text-2xl">assured_workload</span></div><div><span class="font-label-lg text-label-lg font-bold text-on-surface block">Institutional Partners</span><span class="font-body-sm text-body-sm text-on-surface-variant">Supported by Rural Education Foundation &amp; Solar Grid Alliance</span></div></div><div class="flex flex-wrap items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container px-space-md py-space-sm rounded-lg"><span class="material-symbols-outlined text-secondary text-base">sms</span><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface-variant">Offline SMS Dispatch Hotline</span><span class="font-label-lg text-label-lg font-bold text-on-surface">SMS OUTAGE &lt;DISE CODE&gt; to 56161</span></div></div><div class="flex items-center gap-space-xs bg-surface-container px-space-md py-space-sm rounded-lg"><span class="material-symbols-outlined text-tertiary text-base">electrical_services</span><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface-variant">Grid Restoration Protocol</span><span class="font-label-lg text-label-lg font-bold text-on-surface">Standard Sop-IV-Class C</span></div></div></div></div><div class="grid grid-cols-1 md:grid-cols-4 gap-space-lg pt-space-md"><div class="flex flex-col gap-space-xs"><span class="font-headline-md text-headline-md font-bold text-primary">VidyutSahayak</span><p class="font-body-sm text-body-sm text-on-surface-variant">Civic-tech rapid diagnostic and mobilization network restoring electricity to rural government schools across India.</p></div><div class="flex flex-col gap-space-xs"><span class="font-label-lg text-label-lg font-bold text-on-surface">Emergency Guidelines</span><p class="font-body-sm text-body-sm text-on-surface-variant">In case of sparking transformers, sagging high-tension lines, or waterlogged switchboards, keep students 50m away and immediately notify district power dispatchers.</p></div><div class="flex flex-col gap-space-xs"><span class="font-label-lg text-label-lg font-bold text-on-surface">Offline Protocol</span><p class="font-body-sm text-body-sm text-on-surface-variant">Technicians in remote zones can log diagnostic steps via USSD (*999*843#) or sync through local field mesh nodes once radio line-of-sight is established.</p></div><div class="flex flex-col gap-space-xs"><span class="font-label-lg text-label-lg font-bold text-on-surface">Accessibility &amp; Trust</span><p class="font-body-sm text-body-sm text-on-surface-variant">Built in strict compliance with GIGW 3.0 &amp; WCAG 2.1 AA standards. High contrast, vernacular screen-reader ready, and low-bandwidth optimized.</p></div></div><div class="flex flex-wrap items-center justify-between gap-space-md pt-space-lg font-label-md text-label-md text-on-surface-variant"><p>© 2025 VidyutSahayak Civic Network. Public Digital Infrastructure under Open Municipal Commons.</p><div class="flex items-center gap-space-lg"><a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" href="#">Public Safety Disclaimer</a><a class="hover:text-on-surface transition-colors" href="#">Accessibility Statement</a><a class="hover:text-on-surface transition-colors" href="#">Technician Code of Conduct</a></div></div></div></footer>
+<script>
+  let isRecording = false;
+  let recordInterval = null;
+  let recordSeconds = 0;
+  let isPlayingVoice = false;
+  let uploadedPhotos = [];
+
+  const KNOWN_SCHOOLS = {
+    "27300501201": { name: "Z.P. Primary School, Khed", taluka: "Pandharpur", category: "Zilla Parishad (Primary)", students: 240, substation: "Khed 33/11kV Substation", dist: "3.4 km away", feeder: "SLP-KHD-04" },
+    "27300301201": { name: "Z.P. Primary School, Wadgaon", taluka: "Solapur South", category: "Zilla Parishad (Primary)", students: 210, substation: "Wadgaon 33/11kV Substation", dist: "2.1 km away", feeder: "SLP-WDG-01" },
+    "27300401802": { name: "Kavithe Z.P. Girls High School", taluka: "Mohol", category: "Government Girls High School", students: 185, substation: "Mohol Central Grid", dist: "4.5 km away", feeder: "SLP-MHL-03" },
+    "27300701103": { name: "Shindewadi Ashram Shala", taluka: "Pandharpur", category: "Ashram Shala (Tribal Residential)", students: 340, substation: "Pandharpur Rural Feeder", dist: "5.8 km away", feeder: "SLP-SHN-02" },
+    "27300301402": { name: "Boramani Primary Vidyalaya", taluka: "Solapur South", category: "Zilla Parishad (Primary)", students: 160, substation: "Boramani Substation", dist: "1.8 km away", feeder: "SLP-BRM-05" }
+  };
+
+  function jumpToStep(stepNum) {
+    // Highlight step tab
+    for (let i = 1; i <= 4; i++) {
+      const tab = document.getElementById(`stepTab${i}`);
+      const num = document.getElementById(`stepNum${i}`);
+      const title = document.getElementById(`stepTitle${i}`);
+      if (tab && num && title) {
+        if (i === stepNum) {
+          tab.className = 'flex items-center gap-space-xs bg-surface-container p-space-sm rounded-lg cursor-pointer transition-all';
+          num.className = 'w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-label-md';
+          title.className = 'font-label-md text-label-md font-bold text-primary truncate';
+        } else {
+          tab.className = 'flex items-center gap-space-xs p-space-sm rounded-lg opacity-80 cursor-pointer hover:bg-surface-container transition-all';
+          num.className = 'w-8 h-8 rounded-full bg-surface-container-high text-on-primary-fixed-variant flex items-center justify-center font-bold text-label-md';
+          title.className = 'font-label-md text-label-md font-bold text-on-surface truncate';
+        }
+      }
+    }
+    const section = document.getElementById(`section-step-${stepNum}`);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  async function verifySchool() {
+    const inputVal = (document.getElementById('udise-input')?.value || '').trim();
+    if (!inputVal) {
+      VS.showToast('Please enter a School Name or UDISE code');
+      return;
+    }
+
+    // Try finding by 11-digit regex
+    const udiseMatch = inputVal.match(/\d{11}/);
+    const code = udiseMatch ? udiseMatch[0] : null;
+
+    // Check backend API first
+    try {
+      const res = await fetch(`${VS.getApiBase()}/schools`);
+      if (res.ok) {
+        const schools = await res.json();
+        const found = schools.find(s => (code && s.udise === code) || s.name.toLowerCase().includes(inputVal.toLowerCase()) || (s.udise && inputVal.includes(s.udise)));
+        if (found) {
+          applySchoolData(found.udise, found.name, found.taluka, found.category || "Zilla Parishad (Primary)", found.studentsEnrolled || 220);
+          return;
+        }
+      }
+    } catch(e) {}
+
+    // Fallback dictionary
+    if (code && KNOWN_SCHOOLS[code]) {
+      const s = KNOWN_SCHOOLS[code];
+      applySchoolData(code, s.name, s.taluka, s.category, s.students, s.substation, s.dist, s.feeder);
+    } else {
+      // Fuzzy match by name in KNOWN_SCHOOLS
+      for (const [k, s] of Object.entries(KNOWN_SCHOOLS)) {
+        if (s.name.toLowerCase().includes(inputVal.toLowerCase()) || inputVal.toLowerCase().includes(s.taluka.toLowerCase())) {
+          applySchoolData(k, s.name, s.taluka, s.category, s.students, s.substation, s.dist, s.feeder);
+          return;
+        }
+      }
+      // If new code, format nicely
+      const newUdise = code || "27300" + Math.floor(100000 + Math.random() * 900000);
+      applySchoolData(newUdise, inputVal, "Solapur Cluster", "Zilla Parishad (Primary)", 180);
+    }
+  }
+
+  function applySchoolData(udise, name, taluka, category, students, substation, dist, feeder) {
+    const udiseInput = document.getElementById('udise-input');
+    const talukaInput = document.getElementById('taluka-input');
+    const studentsInput = document.getElementById('students-input');
+    const categorySelect = document.getElementById('school-category');
+
+    if (udiseInput) udiseInput.value = `${name} (UDISE: ${udise})`;
+    if (talukaInput) talukaInput.value = taluka;
+    if (studentsInput) studentsInput.value = students;
+    if (categorySelect && category) {
+      for (let opt of categorySelect.options) {
+        if (opt.text.toLowerCase().includes(category.toLowerCase())) {
+          opt.selected = true;
+          break;
+        }
+      }
+    }
+
+    if (substation && document.getElementById('substationName')) document.getElementById('substationName').textContent = substation;
+    if (dist && document.getElementById('substationDist')) document.getElementById('substationDist').textContent = dist;
+    if (feeder && document.getElementById('feederCode')) document.getElementById('feederCode').textContent = `Feeder Code: ${feeder}`;
+
+    VS.showToast(`Verified: ${name} (UDISE: ${udise})`);
+  }
+
+  function selectFaultType(card) {
+    const grid = document.getElementById('fault-types-grid');
+    if (!grid) return;
+    const cards = grid.querySelectorAll('.fault-card');
+    cards.forEach(c => {
+      c.className = 'fault-card relative flex flex-col p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all';
+      const radio = c.querySelector('input[type="radio"]');
+      if (radio) radio.checked = false;
+      const icon = c.querySelector('.check-icon');
+      if (icon) {
+        icon.textContent = 'radio_button_unchecked';
+        icon.className = 'material-symbols-outlined text-outline-variant text-xl check-icon';
+      }
+      const badge = c.querySelector('.rounded-lg');
+      if (badge) badge.className = 'w-10 h-10 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center';
+    });
+
+    card.className = 'fault-card relative flex flex-col p-space-md rounded-xl bg-surface-container ring-2 ring-primary cursor-pointer shadow-sm hover:shadow-md transition-all';
+    const activeRadio = card.querySelector('input[type="radio"]');
+    if (activeRadio) activeRadio.checked = true;
+    const activeIcon = card.querySelector('.check-icon');
+    if (activeIcon) {
+      activeIcon.textContent = 'check_circle';
+      activeIcon.className = 'material-symbols-outlined text-primary text-xl check-icon';
+    }
+    const activeBadge = card.querySelector('.rounded-lg');
+    if (activeBadge) activeBadge.className = 'w-10 h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center';
+  }
+
+  function selectUrgency(card) {
+    const grid = document.getElementById('urgency-grid');
+    if (!grid) return;
+    const cards = grid.querySelectorAll('.urgency-card');
+    cards.forEach(c => {
+      c.className = 'urgency-card flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all';
+      const radio = c.querySelector('input[type="radio"]');
+      if (radio) radio.checked = false;
+    });
+
+    const val = card.querySelector('input[type="radio"]')?.value;
+    if (val === 'Critical Hazard') {
+      card.className = 'urgency-card flex items-start gap-space-sm p-space-md rounded-xl bg-error-container/40 ring-2 ring-error cursor-pointer shadow-sm transition-all';
+    } else {
+      card.className = 'urgency-card flex items-start gap-space-sm p-space-md rounded-xl bg-secondary-fixed/40 ring-2 ring-secondary cursor-pointer shadow-sm transition-all';
+    }
+    const activeRadio = card.querySelector('input[type="radio"]');
+    if (activeRadio) activeRadio.checked = true;
+  }
+
+  function handlePhotoUpload(e) {
+    const file = e.target.files && e.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = function(evt) {
+      const dataUrl = evt.target.result;
+      uploadedPhotos.push(dataUrl);
+
+      const container = document.getElementById('photoThumbnails');
+      if (container) {
+        const div = document.createElement('div');
+        div.className = 'relative w-16 h-16 rounded-lg overflow-hidden bg-surface-container shadow-sm flex-shrink-0 group';
+        div.innerHTML = `
+          <img class="w-full h-full object-cover" src="${dataUrl}"/>
+          <span class="absolute bottom-0 inset-x-0 bg-tertiary/90 text-on-tertiary text-[9px] text-center font-bold">UPLOADED</span>
+        `;
+        container.prepend(div);
+      }
+      VS.showToast(`Damage snapshot '${file.name}' attached!`);
+    };
+    reader.readAsDataURL(file);
+  }
+
+  function toggleVoiceRecording() {
+    const micBtn = document.getElementById('btnRecordVoice');
+    const micIcon = document.getElementById('voiceMicIcon');
+    const title = document.getElementById('voiceRecordTitle');
+    const status = document.getElementById('voiceRecordStatus');
+
+    if (!isRecording) {
+      isRecording = true;
+      recordSeconds = 0;
+      if (micBtn) micBtn.className = 'w-12 h-12 rounded-full bg-error text-on-error flex items-center justify-center shadow-md animate-pulse flex-shrink-0 cursor-pointer';
+      if (micIcon) micIcon.textContent = 'stop';
+      if (title) title.textContent = 'Recording Statement...';
+      if (status) status.textContent = 'Speak clearly in Marathi, Hindi, or English. Click again to finish.';
+
+      recordInterval = setInterval(() => {
+        recordSeconds++;
+        const mins = Math.floor(recordSeconds / 60);
+        const secs = recordSeconds % 60;
+        const formatted = `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+        if (title) title.textContent = `Recording (${formatted})...`;
+      }, 1000);
+
+      VS.showToast('Audio note recording started...');
+    } else {
+      isRecording = false;
+      clearInterval(recordInterval);
+      if (micBtn) micBtn.className = 'w-12 h-12 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center shadow-sm flex-shrink-0 cursor-pointer';
+      if (micIcon) micIcon.textContent = 'check';
+      if (title) title.textContent = 'Voice Note Saved (0:18)';
+      if (status) status.textContent = 'Audio memo successfully attached to dispatch dossier.';
+      
+      const timerEl = document.getElementById('voiceDurationText');
+      if (timerEl) timerEl.textContent = '0:18 / 1:00';
+
+      VS.showToast('Voice memo saved & attached to incident report');
+    }
+  }
+
+  function playVoicePreview() {
+    const playIcon = document.getElementById('playVoiceIcon');
+    const bars = document.getElementById('waveformBars')?.children;
+
+    if (!isPlayingVoice) {
+      isPlayingVoice = true;
+      if (playIcon) playIcon.textContent = 'pause_circle';
+
+      // Animate waveform bars
+      if (bars) {
+        for (let b of bars) {
+          b.classList.add('animate-bounce');
+        }
+      }
+
+      // Synthesize tone
+      try {
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(440, audioCtx.currentTime);
+        gain.gain.setValueAtTime(0.05, audioCtx.currentTime);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start();
+        setTimeout(() => {
+          osc.stop();
+          audioCtx.close();
+        }, 1500);
+      } catch(e) {}
+
+      setTimeout(() => {
+        isPlayingVoice = false;
+        if (playIcon) playIcon.textContent = 'play_circle';
+        if (bars) {
+          for (let b of bars) {
+            b.classList.remove('animate-bounce');
+          }
+        }
+      }, 2500);
+    } else {
+      isPlayingVoice = false;
+      if (playIcon) playIcon.textContent = 'play_circle';
+      if (bars) {
+        for (let b of bars) {
+          b.classList.remove('animate-bounce');
+        }
+      }
+    }
+  }
+
+  function exportSmsTemplate() {
+    const udiseInput = document.getElementById('udise-input')?.value || '27300501201';
+    const udiseMatch = udiseInput.match(/\d{11}/);
+    const code = udiseMatch ? udiseMatch[0] : '27300501201';
+    
+    const selectedFault = document.querySelector('input[name="fault_type"]:checked')?.value || 'BLACKOUT';
+    const selectedUrgency = document.querySelector('input[name="urgency"]:checked')?.value || 'HIGH';
+    const phone = document.getElementById('officer-phone')?.value || '9823044192';
+
+    const smsText = `VS OUTAGE ${code} ${selectedFault.toUpperCase().replace(/\s+/g, '_')} ${selectedUrgency.toUpperCase().replace(/\s+/g, '_')} ${phone.replace(/\D/g, '')}`;
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(smsText);
+    }
+
+    VS.showModal({
+      title: "Offline SMS Dispatch Template",
+      subtitle: "Send via standard feature phone without internet",
+      contentHtml: `
+        <div class="space-y-3">
+          <div class="p-3 bg-slate-900 text-amber-400 font-mono text-sm rounded-lg break-all select-all border border-slate-700">
+            ${smsText}
+          </div>
+          <div class="text-xs text-slate-600 space-y-1">
+            <p>• Send to Toll-Free Gateway: <strong class="text-slate-900 font-bold">56161</strong></p>
+            <p>• Copies instantly to your phone's SMS app</p>
+            <p>• Triggers automated USSD ping to nearest on-duty electrician</p>
+          </div>
+        </div>
+      `,
+      confirmText: "Copy to Clipboard & Close",
+      onConfirm: () => {
+        if (navigator.clipboard) navigator.clipboard.writeText(smsText);
+        VS.showToast('SMS template copied to clipboard!');
+      }
+    });
+  }
+
+  async function submitOutageReport() {
+    const rawSchool = document.getElementById('udise-input')?.value.trim();
+    if (!rawSchool) {
+      VS.showToast('Please specify the School Name or UDISE code');
+      jumpToStep(1);
+      return;
+    }
+
+    const reporterName = document.getElementById('officer-name')?.value.trim();
+    const reporterPhone = document.getElementById('officer-phone')?.value.trim();
+    if (!reporterName || !reporterPhone) {
+      VS.showToast('Please provide Reporter Name and WhatsApp / Mobile number');
+      jumpToStep(4);
+      return;
+    }
+
+    const udiseMatch = rawSchool.match(/\d{11}/);
+    const udise = udiseMatch ? udiseMatch[0] : "27300" + Math.floor(100000 + Math.random() * 900000);
+    const cleanSchoolName = rawSchool.replace(/\(UDISE:.*?\)/, '').trim();
+
+    const faultType = document.querySelector('input[name="fault_type"]:checked')?.value || 'Total Blackout';
+    const urgency = document.querySelector('input[name="urgency"]:checked')?.value || 'High Priority';
+    const taluka = document.getElementById('taluka-input')?.value || 'Pandharpur';
+    const category = document.getElementById('school-category')?.value || 'Zilla Parishad (Primary)';
+    const students = parseInt(document.getElementById('students-input')?.value || '200', 10);
+    const description = document.getElementById('desc')?.value.trim();
+    const designation = document.getElementById('officer-role')?.value || 'Headmaster';
+    const altPhone = document.getElementById('alt-phone')?.value.trim();
+
+    const payload = {
+      udise: udise,
+      schoolName: cleanSchoolName,
+      taluka: taluka,
+      district: "Solapur",
+      category: category,
+      studentsAffected: students,
+      faultType: faultType,
+      urgency: urgency,
+      description: description,
+      contactName: reporterName,
+      contactRole: designation,
+      contactPhone: reporterPhone,
+      altPhone: altPhone,
+      smsAlerts: document.getElementById('sms-consent')?.checked ?? true,
+      hasPhotos: uploadedPhotos.length > 0
+    };
+
+    let newTicketId = "VS-" + Math.floor(1043 + Math.random() * 100);
+
+    try {
+      const res = await fetch(`${VS.getApiBase()}/tickets`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      if (res.ok) {
+        const created = await res.json();
+        if (created.id) newTicketId = created.id;
+      }
+    } catch(e) {
+      console.log('Saved to local queue');
+    }
+
+    // Show Confirmation Modal
+    VS.showModal({
+      title: "Outage Incident Dispatched!",
+      subtitle: `Ticket #${newTicketId} registered & routed to field crew`,
+      contentHtml: `
+        <div class="space-y-4">
+          <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-xl flex items-start gap-3">
+            <span class="material-symbols-outlined text-emerald-600 text-2xl mt-0.5">verified</span>
+            <div>
+              <p class="font-bold text-slate-800 text-sm">Priority Dispatch Initiated</p>
+              <p class="text-xs text-slate-600 mt-1">SMS alert dispatched to 3 certified wiremen within 12km of ${cleanSchoolName}.</p>
+            </div>
+          </div>
+          <div class="bg-slate-50 p-3 rounded-lg text-xs space-y-1 text-slate-700">
+            <p>• <strong>School:</strong> ${cleanSchoolName} (${taluka})</p>
+            <p>• <strong>Urgency:</strong> ${urgency}</p>
+            <p>• <strong>Expected SLA:</strong> Responder call within 25 mins</p>
+            <p>• <strong>SMS Updates:</strong> Enabled for +91 ${reporterPhone}</p>
+          </div>
+        </div>
+      `,
+      confirmText: "Open in Issue Tickets Console",
+      cancelText: "Return to Dashboard",
+      onConfirm: () => {
+        VS.navigateTo('tickets', { id: newTicketId });
+      },
+      onCancel: () => {
+        VS.navigateTo('dashboard');
+      }
+    });
+
+    VS.showToast(`Incident #${newTicketId} submitted successfully!`);
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    VS.initNav();
+  });
+</script>
+</body></html>

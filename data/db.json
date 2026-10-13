@@ -1,0 +1,531 @@
+{
+  "tickets": [
+    {
+      "id": "VS-1042",
+      "schoolName": "Zilla Parishad Primary School, Wadgaon",
+      "udise": "27300501802",
+      "district": "Solapur",
+      "taluka": "solapur",
+      "talukaName": "Solapur South",
+      "urgency": "critical",
+      "urgencyLabel": "CRITICAL HAZARD",
+      "status": "assigned",
+      "statusLabel": "Tech Dispatched",
+      "studentsAffected": 210,
+      "title": "Complete 25kVA Pole Transformer Tripping & Classrooms 1–7 Blackout",
+      "description": "Reported by Headmaster S. Patil: Sparks observed from external feeder cut-out box during morning assembly. Solar backup inverter tripped on overcurrent fault. All computer lab and lighting completely down.",
+      "component": "63A MCB / Tripping",
+      "distance": "3.2 km",
+      "reportedAt": "42 mins ago",
+      "reportedBy": "Anand Shinde (Headmaster)",
+      "reporterPhone": "+91 98221 44321",
+      "assignedTech": {
+        "id": "T-101",
+        "name": "Rajesh Kumar",
+        "role": "Solapur Vidyut Sahayak Volunteer",
+        "license": "Licensed Wireman #4820",
+        "grade": "Grade-A Certified",
+        "phone": "+91 98230 44192",
+        "eta": "ETA 25m",
+        "distance": "3.2 km",
+        "rating": "4.9 (42 jobs)",
+        "equipment": "Havells 63A DP MCB + Fluke Clamp Meter",
+        "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuCN1qu01UN-O_-9NrKN-dsLXX7C6Xu4d5m8xSuzEtnrDVQphhZsLGP8BdgO4CsRrcnaFQCSLE81iMJwC_6s199nSX0vciKphvWc8L6Zy1F1osjWTs1n30yPxFIW6lMmsBjDJ1rGSExZ797gAvdW6EcHOMXEkwfEaC8ZzJuMHQngg6BbnP5z7WbMPw9D3lmL-KHDOBGovyPSyZPu3tE_D9jjC_MuZpUG5lX8hRUFT-b4RQMtrswh6Lg"
+      },
+      "diagnostics": {
+        "feederCode": "SLP-WDG-01",
+        "substation": "Wadgaon 33/11kV (2.1 km)",
+        "phaseLoad": "Red: 42A, Yellow: 0A (Blown), Blue: 38A",
+        "transformer": "25kVA Pole Mount",
+        "mcbRating": "63A 415V DP",
+        "inverterStatus": "22% Backup Remaining"
+      },
+      "photos": [
+        {
+          "title": "INITIAL BREAKDOWN (09:12 AM)",
+          "caption": "Burn marks on central phase conductor after morning rainfall surge",
+          "tag": "FUSE_01",
+          "url": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&auto=format&fit=crop&q=80"
+        },
+        {
+          "title": "SUBSTATION RISER",
+          "caption": "Feeder intake line healthy at 238V; fault isolated to internal main switchboard",
+          "tag": "METER_02",
+          "url": "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=600&auto=format&fit=crop&q=80"
+        }
+      ],
+      "auditTrail": [
+        { "timestamp": "09:15 AM", "sender": "Headmaster Telephonic Inflow Logged", "text": "Helpline 1800-VIDYUT captured automated call from Wadgaon Primary. Prioritized to Hazard Level 1.", "type": "system" },
+        { "timestamp": "09:18 AM", "sender": "Emergency SMS Broadcast Dispatched", "text": "Bulk gateway alert pushed to 4 certified local electricians within 12km radius via shortcode 56161.", "type": "sms" },
+        { "timestamp": "09:48 AM", "sender": "Volunteer En Route with Materials", "text": "Rajesh Kumar updated status via Mobile Sahayak PWA. Carrying Havells 63A DP MCB and industrial tester.", "type": "tech" }
+      ]
+    },
+    {
+      "id": "VS-1039",
+      "schoolName": "Govt High School, Pimpalgaon",
+      "udise": "27300408103",
+      "district": "Solapur",
+      "taluka": "barshi",
+      "talukaName": "Barshi Block",
+      "urgency": "major",
+      "urgencyLabel": "HIGH PRIORITY",
+      "status": "reported",
+      "statusLabel": "Need Volunteer",
+      "studentsAffected": 340,
+      "title": "Laboratory Wiring Short Circuit & Burnt Distribution Fuse Board",
+      "description": "Headmaster reports acrid smell from science lab main switchboard during practical sessions. Breaker isolated manually by staff. Urgently requires licensed electrician with 32A replacement MCB and multimeter test. Physics exam scheduled tomorrow.",
+      "component": "63A MCB / Tripping",
+      "distance": "12.0 km",
+      "reportedAt": "2h 15m ago",
+      "reportedBy": "Kavithe Patil (Headmistress)",
+      "reporterPhone": "+91 94220 89123",
+      "assignedTech": null,
+      "diagnostics": {
+        "feederCode": "BRS-PMP-09",
+        "substation": "Barshi Rural Substation (5.4 km)",
+        "phaseLoad": "Single Phase 220V - High Impedance",
+        "transformer": "63kVA Distribution Transformer",
+        "mcbRating": "32A SP & 63A DP Main",
+        "inverterStatus": "No Solar Inverter Installed"
+      },
+      "photos": [
+        {
+          "title": "SCIENCE LAB SWITCHBOARD",
+          "caption": "Melted neutral busbar connector in secondary junction box",
+          "tag": "FUSE_02",
+          "url": "https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?w=600&auto=format&fit=crop&q=80"
+        }
+      ],
+      "auditTrail": [
+        { "timestamp": "11:20 AM", "sender": "Field Report Received", "text": "Report logged via Form 104-E. Physics exam tomorrow morning 10:00 AM.", "type": "system" },
+        { "timestamp": "11:25 AM", "sender": "SMS Broadcast", "text": "Dispatched to 5 certified technicians in Barshi block.", "type": "sms" }
+      ]
+    },
+    {
+      "id": "VS-1036",
+      "schoolName": "Shindewadi Ashram Shala",
+      "udise": "27300602401",
+      "district": "Solapur",
+      "taluka": "pandharpur",
+      "talukaName": "Pandharpur Sub-division",
+      "urgency": "major",
+      "urgencyLabel": "HIGH PRIORITY",
+      "status": "diagnostic",
+      "statusLabel": "Diagnostic Done",
+      "studentsAffected": 340,
+      "title": "Single Phase Drop Causing Borewell Water Pump Failure",
+      "description": "Single phase line voltage dropped to 140V on Phase B. Submersible pump motor for hostel drinking water unable to turn over. 340 residential students on campus.",
+      "component": "Main Armoured Cable",
+      "distance": "7.5 km",
+      "reportedAt": "3h 40m ago",
+      "reportedBy": "R. M. Ghadge (Superintendent)",
+      "reporterPhone": "+91 98901 32415",
+      "assignedTech": {
+        "id": "T-104",
+        "name": "Amit Deshmukh",
+        "role": "MSEDCL Empanelled Contractor",
+        "license": "Certified Electrician #3190",
+        "grade": "Grade-A Certified",
+        "phone": "+91 97654 22189",
+        "eta": "On Site",
+        "distance": "0.1 km",
+        "rating": "4.8 (65 jobs)",
+        "equipment": "Digital Multimeter + 2.5 sq mm Copper Armoured Coil",
+        "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuBju0ilrIdvxCI8dTspB2D3USnEw1T8WTNFr7P9nm7Hcv5wlbcnvkDhIz0lHJuM0_oSaU2AWL-Huw1GTuo1EoSMhHLk9aKdewLAk5gVLvxvF-PqaDIHd-rLu9VKU3TT6a3GTlPsWl8czSQMLouuWVxr3clPQxEwI4tca0bI0xcYPiFDq0kG_ryrSbe2vnIpSpuV2gL0n1JPWExrcUwPwNbykthAmXJE9f_wvIfA9SDWyY8SioUHbXI"
+      },
+      "diagnostics": {
+        "feederCode": "PND-SHN-03",
+        "substation": "Khed 33/11kV Substation",
+        "phaseLoad": "Phase A: 235V, Phase B: 142V (Drop), Phase C: 240V",
+        "transformer": "Borewell 5HP Starter Relay",
+        "mcbRating": "3-Phase 32A Contactor",
+        "inverterStatus": "Hostel Lighting Operational"
+      },
+      "photos": [
+        {
+          "title": "BOREWELL STARTER PANEL",
+          "caption": "Under-voltage coil vibrating on phase drop",
+          "tag": "PUMP_01",
+          "url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&auto=format&fit=crop&q=80"
+        }
+      ],
+      "auditTrail": [
+        { "timestamp": "10:15 AM", "sender": "Ticket Logged", "text": "Hostel superintendent dialed 1800-VIDYUT reporting pump stalled.", "type": "system" },
+        { "timestamp": "11:00 AM", "sender": "Tech Assigned", "text": "Amit Deshmukh accepted dispatch via WhatsApp.", "type": "tech" },
+        { "timestamp": "12:30 PM", "sender": "Diagnostic Complete", "text": "Voltage drop isolated to loose clamp at pole tapping 200m away.", "type": "tech" }
+      ]
+    },
+    {
+      "id": "VS-1035",
+      "schoolName": "Shri Shivaji Vidyalaya, Khed",
+      "udise": "27300501201",
+      "district": "Solapur",
+      "taluka": "madha",
+      "talukaName": "Madha Taluka",
+      "urgency": "minor",
+      "urgencyLabel": "MEDIUM / PARTIAL",
+      "status": "repairing",
+      "statusLabel": "Parts Procured",
+      "studentsAffected": 180,
+      "title": "Rooftop Inverter Fault Code E04 (PV String Under-Voltage)",
+      "description": "Technician Sunita More assessed yesterday: 1 bypass diode blown on array 2. Replacement parts secured from Pune hub. On-site installation scheduled for today.",
+      "component": "Solar Inverter / Battery",
+      "distance": "5.8 km",
+      "reportedAt": "Yesterday",
+      "reportedBy": "D. B. Shinde (Headmaster)",
+      "reporterPhone": "+91 98223 99876",
+      "assignedTech": {
+        "id": "T-102",
+        "name": "Sunita More",
+        "role": "Solar PV Systems Engineer",
+        "license": "Solar Certified Grade A #5122",
+        "grade": "Grade-A Certified",
+        "phone": "+91 98811 55670",
+        "eta": "In Repair",
+        "distance": "5.8 km",
+        "rating": "4.9 (38 jobs)",
+        "equipment": "Array Diode Tester + MC4 Crimping Kit",
+        "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuBYl9-A4nVl844hJ5nDeQE_k6DpJLE8VMD9v4svSbaemcY0iJ5KOZLVDJ_Wr8vRPPP714swdCbgXEYhzlolh2a5vK8y-SWAzezVJ2ped16OFEKw9aqCdj3RRkbiWd6wKGTHP_gdVQ08K_1tBAgLerEVzF2EsXYK_ZMp_bSHv6c3FRVIJBZDxv3wQHi0GbWogfb0NSxsYXEUv2LAQ_bOSzmcY0hKSVFwV_k1OlYXhPwTAuAV8Unhnrs"
+      },
+      "diagnostics": {
+        "feederCode": "MDH-KHD-02",
+        "substation": "Khed 33/11kV (3.4 km)",
+        "phaseLoad": "Grid Hybrid 5kW",
+        "transformer": "5kVA Solar Inverter",
+        "mcbRating": "DC Isolator 600V 32A",
+        "inverterStatus": "Inverter Fault Code E04"
+      },
+      "photos": [
+        {
+          "title": "SOLAR ARRAY JUNCTION BOX",
+          "caption": "Blown bypass diode module on string 2",
+          "tag": "SOLAR_01",
+          "url": "https://images.unsplash.com/photo-1509391365360-2e959784a276?w=600&auto=format&fit=crop&q=80"
+        }
+      ],
+      "auditTrail": [
+        { "timestamp": "Yesterday 04:30 PM", "sender": "Diagnostic Completed", "text": "Sunita More diagnosed diode failure. Ordered replacement Vishay 45V 15A Schottky diodes.", "type": "tech" },
+        { "timestamp": "Today 08:30 AM", "sender": "Parts Procured", "text": "Courier parcel collected from Madha hub. Technician en route to school.", "type": "tech" }
+      ]
+    },
+    {
+      "id": "VS-1028",
+      "schoolName": "Adarsh Balak Mandir, Barshi",
+      "udise": "27300201905",
+      "district": "Solapur",
+      "taluka": "barshi",
+      "talukaName": "Barshi Block",
+      "urgency": "minor",
+      "urgencyLabel": "LOW / MINOR",
+      "status": "resolved",
+      "statusLabel": "Resolved Today",
+      "studentsAffected": 195,
+      "title": "Ceiling Fan Sparking & Flickering Lights in Class 4",
+      "description": "Issue: Ceiling fan sparking & flickering lights in Std 4. Resolved by volunteer Amit Deshmukh: replaced worn motor capacitor, re-anchored neutral busbar. Verified safe by Headmistress Kavita Joshi.",
+      "component": "Wiring / Fitting",
+      "distance": "4.1 km",
+      "reportedAt": "Today at 09:15 AM",
+      "reportedBy": "Kavita Joshi (Headmistress)",
+      "reporterPhone": "+91 94235 67890",
+      "assignedTech": {
+        "id": "T-104",
+        "name": "Amit Deshmukh",
+        "role": "Volunteer Technician",
+        "license": "Certified Electrician #3190",
+        "grade": "Grade-A Certified",
+        "phone": "+91 97654 22189",
+        "eta": "Completed",
+        "distance": "0 km",
+        "rating": "4.8 (66 jobs)",
+        "equipment": "2.5mfd Capacitors + Insulation Tape",
+        "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuBju0ilrIdvxCI8dTspB2D3USnEw1T8WTNFr7P9nm7Hcv5wlbcnvkDhIz0lHJuM0_oSaU2AWL-Huw1GTuo1EoSMhHLk9aKdewLAk5gVLvxvF-PqaDIHd-rLu9VKU3TT6a3GTlPsWl8czSQMLouuWVxr3clPQxEwI4tca0bI0xcYPiFDq0kG_ryrSbe2vnIpSpuV2gL0n1JPWExrcUwPwNbykthAmXJE9f_wvIfA9SDWyY8SioUHbXI"
+      },
+      "diagnostics": {
+        "feederCode": "BRS-CTY-01",
+        "substation": "Barshi City Substation",
+        "phaseLoad": "230V Balanced Single Phase",
+        "transformer": "Urban Municipal Feeder",
+        "mcbRating": "16A SP Breaker",
+        "inverterStatus": "All Classrooms 100% Operational"
+      },
+      "photos": [
+        {
+          "title": "COMPLETED RESTORATION",
+          "caption": "Replaced capacitor and verified stable current draw under load (0.35A)",
+          "tag": "RESTORED",
+          "url": "https://images.unsplash.com/photo-1541888946425-d0fbb186f5f7?w=600&auto=format&fit=crop&q=80"
+        }
+      ],
+      "auditTrail": [
+        { "timestamp": "09:15 AM", "sender": "Ticket Created", "text": "Complaint regarding buzzing ceiling fan in Class 4.", "type": "system" },
+        { "timestamp": "10:10 AM", "sender": "Repairs Completed", "text": "Capacitor replaced. Earth grounding tested at 1.8 ohms.", "type": "tech" },
+        { "timestamp": "11:45 AM", "sender": "Certified Restored", "text": "Signed off by Headmistress Kavita Joshi. Restored in 2.3 hrs.", "type": "system" }
+      ]
+    },
+    {
+      "id": "VS-1025",
+      "schoolName": "Kasturba Gandhi Balika Vidyalaya, Karmala",
+      "udise": "27300109904",
+      "district": "Solapur",
+      "taluka": "karmala",
+      "talukaName": "Karmala Area",
+      "urgency": "critical",
+      "urgencyLabel": "CRITICAL HAZARD",
+      "status": "reported",
+      "statusLabel": "Need Volunteer",
+      "studentsAffected": 280,
+      "title": "Lightning Surge Damaged Main Feeder Cutout Box & Meter Tripped",
+      "description": "High voltage thunderstorm surge burned main porcelain fuse cutouts on external service pole. Residential girls hostel completely without power. Backup diesel generator fuel running low.",
+      "component": "Substation Feeder",
+      "distance": "14.5 km",
+      "reportedAt": "1h 10m ago",
+      "reportedBy": "Pooja Deshpande (Warden)",
+      "reporterPhone": "+91 98810 11223",
+      "assignedTech": null,
+      "diagnostics": {
+        "feederCode": "KRM-CTR-04",
+        "substation": "Karmala 33kV Grid",
+        "phaseLoad": "All 3 Phases Down at Service Entrance",
+        "transformer": "63kVA Distribution Transformer",
+        "mcbRating": "100A Porcelain Cutout Fuses",
+        "inverterStatus": "Hostel Generator at 15% Fuel"
+      },
+      "photos": [],
+      "auditTrail": [
+        { "timestamp": "01:25 PM", "sender": "Emergency Call", "text": "Hostel warden placed distress call to 1800-VIDYUT. Immediate priority broadcast.", "type": "system" }
+      ]
+    },
+    {
+      "id": "VS-1022",
+      "schoolName": "ZP Primary School, Mohol",
+      "udise": "27300301402",
+      "district": "Solapur",
+      "taluka": "solapur",
+      "talukaName": "Mohol Block",
+      "urgency": "major",
+      "urgencyLabel": "HIGH PRIORITY",
+      "status": "assigned",
+      "statusLabel": "Tech Dispatched",
+      "studentsAffected": 160,
+      "title": "Mid-Day Meal Kitchen Distribution Board Short Circuit",
+      "description": "Electric mixer and exhaust fan wiring shorted due to roof moisture leakage. Kitchen cooks unable to use appliances for student meals.",
+      "component": "63A MCB / Tripping",
+      "distance": "6.2 km",
+      "reportedAt": "2h 45m ago",
+      "reportedBy": "R. K. Kamble (Headmaster)",
+      "reporterPhone": "+91 94210 54321",
+      "assignedTech": {
+        "id": "T-103",
+        "name": "Vikram Shinde",
+        "role": "Apprentice Electrician",
+        "license": "ITI Electrical Apprentice",
+        "grade": "Apprentice Level 2",
+        "phone": "+91 99223 88124",
+        "eta": "ETA 15m",
+        "distance": "4.5 km",
+        "rating": "4.7 (19 jobs)",
+        "equipment": "Standard Wiring Kit + 16A Isolator",
+        "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuBju0ilrIdvxCI8dTspB2D3USnEw1T8WTNFr7P9nm7Hcv5wlbcnvkDhIz0lHJuM0_oSaU2AWL-Huw1GTuo1EoSMhHLk9aKdewLAk5gVLvxvF-PqaDIHd-rLu9VKU3TT6a3GTlPsWl8czSQMLouuWVxr3clPQxEwI4tca0bI0xcYPiFDq0kG_ryrSbe2vnIpSpuV2gL0n1JPWExrcUwPwNbykthAmXJE9f_wvIfA9SDWyY8SioUHbXI"
+      },
+      "diagnostics": {
+        "feederCode": "MHL-VLG-02",
+        "substation": "Mohol Substation",
+        "phaseLoad": "220V Single Phase",
+        "transformer": "Standard 25kVA",
+        "mcbRating": "20A MCB Tripped",
+        "inverterStatus": "Normal"
+      },
+      "photos": [],
+      "auditTrail": [
+        { "timestamp": "11:50 AM", "sender": "Ticket Logged", "text": "Headmaster reported kitchen electrical line trip.", "type": "system" },
+        { "timestamp": "12:10 PM", "sender": "Dispatched", "text": "Vikram Shinde assigned from Mohol ITI Volunteer Cell.", "type": "tech" }
+      ]
+    }
+  ],
+  "technicians": [
+    {
+      "id": "T-101",
+      "name": "Rajesh Kumar",
+      "role": "Lead Wireman & Volunteer",
+      "license": "Wireman Lic. #4820",
+      "grade": "Grade-A Certified",
+      "status": "En Route",
+      "taluka": "solapur",
+      "distance": "3.2 km",
+      "phone": "+91 98230 44192",
+      "rating": "4.9 (42 jobs)",
+      "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuCN1qu01UN-O_-9NrKN-dsLXX7C6Xu4d5m8xSuzEtnrDVQphhZsLGP8BdgO4CsRrcnaFQCSLE81iMJwC_6s199nSX0vciKphvWc8L6Zy1F1osjWTs1n30yPxFIW6lMmsBjDJ1rGSExZ797gAvdW6EcHOMXEkwfEaC8ZzJuMHQngg6BbnP5z7WbMPw9D3lmL-KHDOBGovyPSyZPu3tE_D9jjC_MuZpUG5lX8hRUFT-b4RQMtrswh6Lg"
+    },
+    {
+      "id": "T-102",
+      "name": "Sunita More",
+      "role": "Solar PV Systems Engineer",
+      "license": "Solar Certified Grade A #5122",
+      "grade": "Grade-A Certified",
+      "status": "Available",
+      "taluka": "madha",
+      "distance": "5.8 km",
+      "phone": "+91 98811 55670",
+      "rating": "4.9 (38 jobs)",
+      "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuBYl9-A4nVl844hJ5nDeQE_k6DpJLE8VMD9v4svSbaemcY0iJ5KOZLVDJ_Wr8vRPPP714swdCbgXEYhzlolh2a5vK8y-SWAzezVJ2ped16OFEKw9aqCdj3RRkbiWd6wKGTHP_gdVQ08K_1tBAgLerEVzF2EsXYK_ZMp_bSHv6c3FRVIJBZDxv3wQHi0GbWogfb0NSxsYXEUv2LAQ_bOSzmcY0hKSVFwV_k1OlYXhPwTAuAV8Unhnrs"
+    },
+    {
+      "id": "T-103",
+      "name": "Vikram Shinde",
+      "role": "Apprentice Electrician",
+      "license": "ITI Electrical Apprentice",
+      "grade": "Apprentice",
+      "status": "Available",
+      "taluka": "solapur",
+      "distance": "7.1 km",
+      "phone": "+91 99223 88124",
+      "rating": "4.7 (19 jobs)",
+      "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuBju0ilrIdvxCI8dTspB2D3USnEw1T8WTNFr7P9nm7Hcv5wlbcnvkDhIz0lHJuM0_oSaU2AWL-Huw1GTuo1EoSMhHLk9aKdewLAk5gVLvxvF-PqaDIHd-rLu9VKU3TT6a3GTlPsWl8czSQMLouuWVxr3clPQxEwI4tca0bI0xcYPiFDq0kG_ryrSbe2vnIpSpuV2gL0n1JPWExrcUwPwNbykthAmXJE9f_wvIfA9SDWyY8SioUHbXI"
+    },
+    {
+      "id": "T-104",
+      "name": "Amit Deshmukh",
+      "role": "Certified Electrician",
+      "license": "Certified Electrician #3190",
+      "grade": "Grade-A Certified",
+      "status": "Available",
+      "taluka": "barshi",
+      "distance": "4.1 km",
+      "phone": "+91 97654 22189",
+      "rating": "4.8 (66 jobs)",
+      "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuCN1qu01UN-O_-9NrKN-dsLXX7C6Xu4d5m8xSuzEtnrDVQphhZsLGP8BdgO4CsRrcnaFQCSLE81iMJwC_6s199nSX0vciKphvWc8L6Zy1F1osjWTs1n30yPxFIW6lMmsBjDJ1rGSExZ797gAvdW6EcHOMXEkwfEaC8ZzJuMHQngg6BbnP5z7WbMPw9D3lmL-KHDOBGovyPSyZPu3tE_D9jjC_MuZpUG5lX8hRUFT-b4RQMtrswh6Lg"
+    },
+    {
+      "id": "T-105",
+      "name": "Priya Jadhav",
+      "role": "Solar Maintenance Technician",
+      "license": "Solar Technician Lic #6201",
+      "grade": "Grade-B Certified",
+      "status": "Available",
+      "taluka": "pandharpur",
+      "distance": "8.4 km",
+      "phone": "+91 98902 44332",
+      "rating": "4.8 (27 jobs)",
+      "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuBYl9-A4nVl844hJ5nDeQE_k6DpJLE8VMD9v4svSbaemcY0iJ5KOZLVDJ_Wr8vRPPP714swdCbgXEYhzlolh2a5vK8y-SWAzezVJ2ped16OFEKw9aqCdj3RRkbiWd6wKGTHP_gdVQ08K_1tBAgLerEVzF2EsXYK_ZMp_bSHv6c3FRVIJBZDxv3wQHi0GbWogfb0NSxsYXEUv2LAQ_bOSzmcY0hKSVFwV_k1OlYXhPwTAuAV8Unhnrs"
+    }
+  ],
+  "schools": [
+    {
+      "udise": "27300501802",
+      "name": "Zilla Parishad Primary School, Wadgaon",
+      "district": "Solapur",
+      "taluka": "solapur",
+      "talukaName": "Solapur South",
+      "category": "Zilla Parishad (Primary)",
+      "students": 210,
+      "headmaster": "Anand Shinde",
+      "phone": "+91 98221 44321",
+      "substation": "Wadgaon 33/11kV",
+      "feeder": "SLP-WDG-01"
+    },
+    {
+      "udise": "27300501201",
+      "name": "Z.P. Primary School, Khed",
+      "district": "Solapur",
+      "taluka": "pandharpur",
+      "talukaName": "Pandharpur",
+      "category": "Zilla Parishad (Primary)",
+      "students": 240,
+      "headmaster": "Sunita B. Patil",
+      "phone": "+91 98230 44192",
+      "substation": "Khed 33/11kV Substation",
+      "feeder": "SLP-KHD-04"
+    },
+    {
+      "udise": "27300408103",
+      "name": "Govt High School, Pimpalgaon",
+      "district": "Solapur",
+      "taluka": "barshi",
+      "talukaName": "Barshi Block",
+      "category": "Aided Secondary School",
+      "students": 340,
+      "headmaster": "Kavithe Patil",
+      "phone": "+91 94220 89123",
+      "substation": "Barshi Rural Substation",
+      "feeder": "BRS-PMP-09"
+    },
+    {
+      "udise": "27300602401",
+      "name": "Shindewadi Ashram Shala",
+      "district": "Solapur",
+      "taluka": "pandharpur",
+      "talukaName": "Pandharpur Sub-division",
+      "category": "Ashram Shala (Tribal Residential)",
+      "students": 340,
+      "headmaster": "R. M. Ghadge",
+      "phone": "+91 98901 32415",
+      "substation": "Pandharpur Grid Node",
+      "feeder": "PND-SHN-03"
+    },
+    {
+      "udise": "27300109904",
+      "name": "Kasturba Gandhi Balika Vidyalaya",
+      "district": "Solapur",
+      "taluka": "karmala",
+      "talukaName": "Karmala Area",
+      "category": "KGBV Model Vidyalaya",
+      "students": 280,
+      "headmaster": "Pooja Deshpande",
+      "phone": "+91 98810 11223",
+      "substation": "Karmala 33kV Grid",
+      "feeder": "KRM-CTR-04"
+    },
+    {
+      "udise": "27300201905",
+      "name": "Adarsh Balak Mandir, Barshi",
+      "district": "Solapur",
+      "taluka": "barshi",
+      "talukaName": "Barshi Block",
+      "category": "Zilla Parishad (Primary)",
+      "students": 195,
+      "headmaster": "Kavita Joshi",
+      "phone": "+91 94235 67890",
+      "substation": "Barshi City Substation",
+      "feeder": "BRS-CTY-01"
+    },
+    {
+      "udise": "27300301402",
+      "name": "ZP Primary School, Mohol",
+      "district": "Solapur",
+      "taluka": "solapur",
+      "talukaName": "Mohol Block",
+      "category": "Zilla Parishad (Primary)",
+      "students": 160,
+      "headmaster": "R. K. Kamble",
+      "phone": "+91 94210 54321",
+      "substation": "Mohol Substation",
+      "feeder": "MHL-VLG-02"
+    },
+    {
+      "udise": "27300702105",
+      "name": "New English School, Kurduvadi",
+      "district": "Solapur",
+      "taluka": "madha",
+      "talukaName": "Madha Taluka",
+      "category": "Aided Secondary School",
+      "students": 310,
+      "headmaster": "V. S. Kulkarni",
+      "phone": "+91 98224 77112",
+      "substation": "Kurduvadi Jn 33kV",
+      "feeder": "KRD-RLY-01"
+    },
+    {
+      "udise": "27300401899",
+      "name": "Govt High School, Vairag",
+      "district": "Solapur",
+      "taluka": "barshi",
+      "talukaName": "Barshi Block",
+      "category": "Government Girls High School",
+      "students": 290,
+      "headmaster": "M. T. Shaikh",
+      "phone": "+91 94231 66554",
+      "substation": "Vairag Rural 33kV",
+      "feeder": "VRG-SCH-01"
+    }
+  ]
+}

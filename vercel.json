@@ -1,0 +1,10 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/dashboard", "destination": "/stitch_vidyutsahayak_school_power_platform/vidyutsahayak_main_dashboard/code.html" },
+    { "source": "/tickets", "destination": "/stitch_vidyutsahayak_school_power_platform/issue_tickets_volunteer_dispatch/code.html" },
+    { "source": "/report", "destination": "/stitch_vidyutsahayak_school_power_platform/report_electrical_outage/code.html" },
+    { "source": "/feed", "destination": "/stitch_vidyutsahayak_school_power_platform/vidyutsahayak_homepage_live_dispatch_feed/code.html" },
+    { "source": "/api/(.*)", "destination": "/api/$1" }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "vidyutsahayak-school-power-platform",
+  "version": "1.0.0",
+  "description": "VidyutSahayak Rural School Electrification & Rapid Response Dispatch Platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "rural-electrification",
+    "power-grid",
+    "volunteer-dispatch",
+    "civic-tech"
+  ],
+  "author": "VidyutSahayak Civic Network",
+  "license": "MIT"
+}
